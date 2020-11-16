@@ -33,7 +33,7 @@ let categories = [
  *      Answer: https://bit.ly/3gOwrga
  */
 function renderCategories() {
-  for (let category of catergories) {
+  for (let category of categories) {
     $("#categories").append(
       "<div class='category'><div class='category-cell'>" +
         category +
