@@ -61,13 +61,15 @@ function questionOnClick(categoryIndex, moneyValue) {
   $("#question-modal-text").html(question.question_text);
   $("#question-modal-show-answer")
     .click(() => {
-      // Add code here
+      // Add code here   
+      answerOnClick(categoryIndex, moneyValue);
       console.log("I just got clicked, I wish I could do more though!");
     })
-    .show();
+    .show();  
 
-  $("#question-modal-close").click(() => {
-    // Add code here
+  $("#question-modal-close").click(() => { 
+    // Add code here  
+    getQuestion(categoryIndex, moneyValue);
     console.log("I just got clicked, I wish I could do more though!");
   });
   $("#question-modal").modal("show");
