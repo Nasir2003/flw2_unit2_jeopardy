@@ -15,8 +15,12 @@
  *      Need more help? Check out https://api.jquery.com/ or ask a volunteer.
  */
 
-function renderScoringButtons() {
-    // Add code here
+function renderScoringButtons() { 
+    $("#score").show(); 
+    $("#question-modal-show-answer").click(function() {
+        $("#question-modal-actions").hide(); 
+        $("#scoring-actions").show();
+});
 }
 
 /* TODO: Program the following:
