@@ -69,7 +69,7 @@ function questionOnClick(categoryIndex, moneyValue) {
 
   $("#question-modal-close").click(() => { 
     // Add code here  
-    getQuestion(categoryIndex, moneyValue);
+    hideQuestionPopup();
     console.log("I just got clicked, I wish I could do more though!");
   });
   $("#question-modal").modal("show");
